@@ -51,8 +51,8 @@ const appendData = (dataObject, bbl) => {
 
     records.map(record => {
       html += "<tr>";
-      Object.values(record).forEach(val => {
-        html += `<td>${val}</td>`;
+      Object.entries(record).forEach(([key, val]) => {
+        html += `<td data-label='${key}'>${val}</td>`;
       });
       html += "</tr>";
     });
