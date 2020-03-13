@@ -42,7 +42,7 @@ const appendData = (dataObject, bbl) => {
 
   if (records.length > 1) {
     let html =
-      "<table class='rt'><thead><tr><th style='text-align:center;width:100%;' colspan='7'>Historical Site Information</th></tr><tr>";
+      `<a href='${document.referrer}'>Click to Go Back to SPEED 2.0</a><table class='rt'><thead><tr><th style='text-align:center;width:100%;' colspan='7'>Historical Site Information For ${BBL}</th></tr><tr>`;
     Object.keys(records[0]).forEach(key => {
       html += `<th>${key}</th>`;
     });
